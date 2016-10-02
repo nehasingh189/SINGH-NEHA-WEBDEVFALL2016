@@ -5,6 +5,9 @@ body {
     width:100%!important;
     height:100%!important;
 }
+.TopSpacingList {
+    height:60px!important;
+}
 .TopSpacing {
     height:20px!important;
 }
@@ -43,13 +46,14 @@ border:none!important;
 
 .navbar-brand {
 color:white!important;
-font-size:24px!important;
+font-size:20px!important;
+font-weight:600!important;
 }
 
 .navbar-brand-widget-color {
 color:#6C6C6C!important;
-font-size:24px!important;
-font-weight:700!important;
+font-size:20px!important;
+font-weight:600!important;
 }
 
 .Widget-Image {

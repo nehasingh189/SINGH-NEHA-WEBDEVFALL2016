@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -16,84 +16,105 @@
 
     <style>
     @media only screen and (orientation: portrait) {
-        .list-group {
-            display:none;
+            .hidethisdiv {
+                display:none!important;
+            }
+            .expandthisdiv {
+                width:100%!important;
+            }
+            .WebSite-V-Border {
+                border-left-style:none!important;
+                border-bottom-style:none!important;
+                border-top-style:none!important;
+                border-right-style:none!important;
+            }
         }
-        .portraithide {
-            display:none;
-        }
-        .glyphicon-plus {
-            display:none;
+        @media only screen and (orientation: landscape) {
+            .hidethisg {
+                display:none!important;
+                width:0%!important;
+            }
+            .WebSite-V-Border {
+                border-left-style:solid!important;
+                border-bottom-style:none!important;
+                border-top-style:none!important;
+                border-right-style:none!important;
+                border-left-color:#6C6C6C!important;
+            }
         }
 
-    }
     </style>
 </head>
 <body>
     <form id="form1">
         <nav style="background-color: #428BCA" class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
+            
                 <div class="row">
-                    <div class="col-lg-4">
-                        <span class="navbar-brand"><a href="../WebSite/website-list.html" target="_self"><span class="glyphicon glyphicon-chevron-left"></span></a> <span class="portraithide">WebSites</span></span>
-                        <div class="navbar-text pull-right">
-                            <a href="../WebSite/website-new.html" class="pull-right"><span class="glyphicon glyphicon-plus"></span></a>
+                    <div class="col-xs-4 hidethisdiv">
+                        <div class="container-fluid">
+                            <div class="col-xs-1 pull-left navbar-text" style="padding:0px;">
+                                <a class="portraithide" href="../WebSite/website-list.html" target="_self"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                            </div>
+                            <div class="col-xs-9 navbar-brand">Websites</div>
+                            <div class="pull-right col-xs-1 navbar-text" style="padding:0px;">
+                                <a href="../WebSite/website-new.html" class="pull-right"><span class="glyphicon glyphicon-plus"></span></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <a class="navbar-brand" href="../User/Profile.html" target="_self">New WebSite</a>
-                        <div class="navbar-text pull-right">
-                            <a href="../WebSite/website-list.html" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
+                    <div class="col-xs-8 expandthisdiv">
+                        <div class="container-fluid">
+                            <div class="col-xs-1 pull-left navbar-text hidethisg">
+                                <a class="portraithide" href="../WebSite/website-list.html" target="_self"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                            </div>
+                            <div class="col-xs-9 navbar-brand">New Website</div>
+                            <div class="pull-right col-xs-1 navbar-text">
+                                <a href="../WebSite/website-list.html" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
+                            </div>
                         </div>
                     </div>
-                 </div>
-            </div>
+                </div>
+            
         </nav>
         <div class="container">
             <div class="row">
-                <div class="TopSpacing">
-                    &nbsp;
+                <div class="col-xs-4 hidethisdiv">
+                    <div class="row">
+                        <div class="TopSpacingList">
+                            &nbsp;
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item RemoveBorder">Address Book App <a href="../WebSite/website-edit.html" target="_self"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                        <li class="list-group-item RemoveBorder">Blogger <a href="../WebSite/website-edit.html" target="_self"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                        <li class="list-group-item RemoveBorder">Blogging App <a href="../WebSite/website-edit.html" target="_self"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                        <li class="list-group-item RemoveBorder">Script Testing App <a href="../WebSite/website-edit.html" target="_self"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-8 expandthisdiv WebSite-V-Border">
+                    <div class="row">
+                        <div class="TopSpacing">
+                            &nbsp;
+                        </div>
+                    </div>
+                    <div class="FormControlSpace"></div>
+                    <div class="form-group">
+                        <label for="webname">Name</label>
+                        <input type="text" id="webname" name="webname" class="form-control" placeholder="Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="4" name="description" class="form-control" placeholder="Description">
+                        </textarea>
+                    </div>
+                    <div class="FormControlSpace"></div>
+                    <div class="FormControlSpace"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-3">
-                    <div class="row">
-                        <ul class="list-group">
-                            <li class="list-group-item RemoveBorder">Address Book App <a href="../WebSite/website-edit.html" target="_self"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-                            <li class="list-group-item RemoveBorder">Blogger <a href="../WebSite/website-edit.html" target="_self"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-                            <li class="list-group-item RemoveBorder">Blogging App <a href="../WebSite/website-edit.html" target="_self"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-                            <li class="list-group-item RemoveBorder">Script Testing App <a href="../WebSite/website-edit.html" target="_self"><span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row">
-                            <div class="col-lg-12">
-                                  <div class="row">
-                                      <div class="col-lg-1"></div>
-                                      <div class="col-lg-11">
-                                          <div class="form-group">
-                                              <label for="webname">Name</label>
-                                              <input type="text" id="webname" name="webname" class="form-control" placeholder="Name">
-                                          </div>
-                                          <div class="form-group">
-                                              <label for="description">Description</label>
-                                              <textarea id="description" rows="4" name="description" class="form-control" placeholder="Description">
-                                              </textarea>
-                                          </div>
-                                      </div>
-                                    </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="col-lg-1"></div>
-                </div>
         </div>
-        <nav style="background-color: #428BCA" class="navbar navbar-default navbar-fixed-bottom ">
-            <div class="container">
-                <div class="row navbar-header navbar-right">
-                    <div class="navbar-text navbar-right pull-right">
+        <nav style="background-color: #428BCA" class="navbar-default navbar-fixed-bottom ">
+            <div class="container-fluid">
+                <div class="navbar-right">
+                    <div class="navbar-text pull-right">
                         <a href="../User/Profile.html" target="_self"><span class="glyphicon glyphicon-user"></span></a>
                     </div>
                 </div>
