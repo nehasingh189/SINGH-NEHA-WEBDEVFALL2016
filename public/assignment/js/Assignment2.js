@@ -1,11 +1,11 @@
 function RedirectToRegistration()
 {
-    window.open('Register.html', '_self');
+    window.open('register.html', '_self');
 }
 
 function RedirectToLogin()
 {
-    window.open('Login.html', '_self');
+    window.open('login.html', '_self');
 }
 
 function RedirectToWishList()
@@ -18,7 +18,7 @@ function RedirectToWidgetList() {
 }
 
 function RedirectToPageList() {
-    window.open('Page-list.html', '_self');
+    window.open('page-list.html', '_self');
 }
 
 function ValidateLogin()
